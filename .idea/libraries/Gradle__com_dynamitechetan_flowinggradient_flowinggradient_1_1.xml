@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.dynamitechetan.flowinggradient:flowinggradient-1.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/flowinggradient-1.1.aar/22a2ef7778c357a84d21529e5f9d30ae/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/flowinggradient-1.1.aar/22a2ef7778c357a84d21529e5f9d30ae/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.dynamitechetan.flowinggradient/flowinggradient/1.1/58c562f2674f1133aec9f254865ca3891400b2a6/flowinggradient-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

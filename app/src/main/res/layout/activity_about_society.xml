@@ -1,0 +1,705 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:background="@android:color/white"
+	android:fitsSystemWindows="true"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<android.support.v4.widget.NestedScrollView
+		android:background="@android:color/white"
+		android:scrollbars="none"
+		android:clipToPadding="false"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollingCache="true"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_height="200.0dip">
+				<ImageView
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:src="@drawable/image_30"
+					android:scaleType="centerCrop" />
+				<View
+					android:background="@color/overlay_dark_60"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent" />
+				<LinearLayout android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true">
+					<ImageView
+						android:id="@+id/bt_accept"
+						android:background="@drawable/ic_hatwhite"
+						android:layout_width="70.0dip"
+						android:layout_height="70.0dip"/>
+					<TextView
+						android:textSize="35.0dip"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+						android:textColor="@color/grey_3"
+						android:gravity="center"
+						android:fontFamily="@font/roboto"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/app_name"
+						app:fontFamily="sans-serif-medium" />
+				</LinearLayout>
+			</RelativeLayout>
+			<TextView
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+				android:textColor="@color/colorPrimary"
+				android:gravity="center"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15.0dip"
+				android:text="Our Team"
+				app:fontFamily="sans-serif-medium" />
+			<LinearLayout
+				android:gravity="center_horizontal"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15.0dip"
+				android:layout_marginTop="15.0dip"
+				android:layout_marginRight="15.0dip">
+				<LinearLayout
+					android:id="@+id/profile1"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/profile_pic"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Vimal K."
+						app:fontFamily="sans-serif-medium" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Developer"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/profile2"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_female_2"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Bindesh Y."
+						app:fontFamily="sans-serif-medium" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Marketing"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/profile3"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_male_7"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Shubham P."
+						app:fontFamily="sans-serif-medium" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Business Analyst"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:gravity="center_horizontal"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15.0dip"
+				android:layout_marginTop="20.0dip"
+				android:layout_marginRight="15.0dip">
+				<LinearLayout
+					android:id="@+id/profile4"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_male_3"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Ambika Y."
+						app:fontFamily="sans-serif-medium" />
+					<TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="UX Designer"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/profile5"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_male_5"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Shubham V."
+						app:fontFamily="sans-serif-medium" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Web Developer"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/profile6"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_female_1"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Ashish K."
+						app:fontFamily="sans-serif-medium" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Mobile Dev"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:gravity="center_horizontal"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15.0dip"
+				android:layout_marginTop="20.0dip"
+				android:layout_marginRight="15.0dip">
+				<LinearLayout
+					android:id="@+id/profile7"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_male_3"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Ambika Y."
+						app:fontFamily="sans-serif-medium" />
+					<TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="UX Designer"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/profile8"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_male_5"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Shubham V."
+						app:fontFamily="sans-serif-medium" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Web Developer"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/profile9"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_female_1"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Ashish K."
+						app:fontFamily="sans-serif-medium" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Mobile Dev"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:gravity="center_horizontal"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15.0dip"
+				android:layout_marginTop="20.0dip"
+				android:layout_marginRight="15.0dip">
+				<LinearLayout
+					android:id="@+id/profile10"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_male_3"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Ambika Y."
+						app:fontFamily="sans-serif-medium" />
+					<TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="UX Designer"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/profile11"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_male_5"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Shubham V."
+						app:fontFamily="sans-serif-medium" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Web Developer"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/profile12"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_female_1"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Ashish K."
+						app:fontFamily="sans-serif-medium" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Mobile Dev"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:gravity="center_horizontal"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15.0dip"
+				android:layout_marginTop="20.0dip"
+				android:layout_marginRight="15.0dip">
+				<LinearLayout
+					android:id="@+id/profile13"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_male_3"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Ambika Y."
+						app:fontFamily="sans-serif-medium" />
+					<TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="UX Designer"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/profile14"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_male_5"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Shubham V."
+						app:fontFamily="sans-serif-medium" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Web Developer"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/profile15"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_female_1"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Ashish K."
+						app:fontFamily="sans-serif-medium" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Mobile Dev"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:gravity="center_horizontal"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15.0dip"
+				android:layout_marginTop="20.0dip"
+				android:layout_marginRight="15.0dip">
+				<LinearLayout
+					android:id="@+id/profile16"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+					<com.mikhaellopez.circularimageview.CircularImageView
+						android:layout_width="50.0dip"
+						android:layout_height="50.0dip"
+						android:src="@drawable/photo_male_3"
+						app:civ_border="true"
+						app:civ_border_color="@color/grey_10"
+						app:civ_border_width="2.0dip"
+						app:civ_shadow="true"
+						app:civ_shadow_radius="0.0" />
+					<TextView
+						android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_90"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5.0dip"
+						android:text="Ambika Y."
+						app:fontFamily="sans-serif-medium" />
+					<TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+						android:textColor="@color/grey_60"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="UX Designer"
+						app:fontFamily="sans-serif-light" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout android:orientation="vertical"
+				android:paddingLeft="20.0dip"
+				android:paddingTop="15.0dip"
+				android:paddingRight="20.0dip"
+				android:paddingBottom="15.0dip"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15.0dip">
+				<TextView
+					android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+					android:textColor="@color/colorPrimary"
+					android:gravity="center"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="Mission"
+					app:fontFamily="sans-serif-medium" />
+				<TextView
+					android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+					android:textColor="@color/grey_60"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="15.0dip"
+					android:text="@string/long_lorem_ipsum"
+					app:fontFamily="sans-serif-light" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="vertical"
+				android:background="@android:color/white"
+				android:paddingLeft="20.0dip"
+				android:paddingTop="15.0dip"
+				android:paddingRight="20.0dip"
+				android:paddingBottom="15.0dip"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+
+				<TextView
+					android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+					android:textColor="@color/colorPrimary"
+					android:gravity="center"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="Address"
+					app:fontFamily="sans-serif-medium" />
+
+
+				<fragment
+					android:layout_marginTop="10.0dp"
+					android:layout_width="fill_parent"
+					android:layout_height="120dp"
+					android:id="@+id/map"
+					android:name="com.google.android.gms.maps.MapFragment" />
+
+
+				<TextView
+					android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+					android:textColor="@color/grey_60"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10.0dip"
+					android:text="College of Vocational Studies, Triveni" />
+				<TextView
+					android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+					android:textColor="@color/grey_60"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="Sheikh Sarai-II, New Delhi" />
+				<TextView
+					android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+					android:textColor="@color/grey_60"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="110017" />
+			</LinearLayout>
+		</LinearLayout>
+	</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

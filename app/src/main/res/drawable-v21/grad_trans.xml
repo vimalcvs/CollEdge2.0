@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<animation-list
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/selected"
+	android:oneshot="false">
+
+	<item android:duration="4000"
+		android:drawable="@drawable/grad1" />
+
+
+	<item android:duration="4000"
+		android:drawable="@drawable/grad2" />
+
+	<item android:duration="4000"
+		android:drawable="@drawable/grad3" />
+
+
+	<item android:duration="4000"
+		android:drawable="@drawable/grad4" />
+
+
+	<item android:duration="4000"
+		android:drawable="@drawable/grad5" />
+</animation-list>
